@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dead Memories – Historia</title>
+
+  <style>
+    :root{
+      --bg1:#020204;
+      --bg2:#0b0b0f;
+      --accent:#ff6f61;
+      --muted:#bfc6d1;
+      --card:rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      border-bottom:1px solid rgba(255,255,255,0.04);
+      position:sticky;
+      top:0;
+      backdrop-filter: blur(6px);
+      z-index:50;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      color:#fff;
+      text-decoration:none;
+    }
+    .brand img{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+    nav a:hover{ color:#fff; }
+
+    /* MAIN */
+    .container{
+      max-width:900px;
+      margin:50px auto;
+      padding:0 22px;
+    }
+
+    h1{
+      text-align:center;
+      color:#fff;
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    h2{
+      text-align:center;
+      color:var(--accent);
+      font-size:20px;
+      margin-top:0;
+      margin-bottom:40px;
+      letter-spacing:1px;
+    }
+
+    .story-section{
+      margin-bottom:50px;
+      padding:26px;
+      background:var(--card);
+      border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,0.03);
+      backdrop-filter: blur(2px);
+      box-shadow:0 12px 40px rgba(0,0,0,0.5);
+    }
+
+    .story-section img{
+      width:100%;
+      border-radius:12px;
+      margin:16px 0;
+      object-fit:cover;
+    }
+
+    h3{
+      color:#fff;
+      margin-top:0;
+    }
+
+    .quote{
+      margin:20px 0;
+      padding:18px;
+      background:rgba(255,255,255,0.06);
+      border-left:5px solid var(--accent);
+      border-radius:10px;
+      font-style:italic;
+      color:#fff;
+    }
+
+    footer{
+      text-align:center;
+      margin:60px 0 20px;
+      color:rgba(255,255,255,0.4);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="Deadmemories.html" class="brand">
+    <img src="logo.jpeg" alt="logo" onerror="this.style.display='none'">
+    <div>
+      <strong>Dead Memories</strong>
+      <div style="font-size:12px;color:var(--muted)">Historia</div>
+    </div>
+  </a>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="videojuego.html">Videojuego</a>
+    <a href="historia.html">Historia</a>
+    <a href="personajes.html">Personajes</a>
+    <a href="expansiones.html">Expansiones</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1>La Historia</h1>
+  <h2>Los recuerdos también pueden mentir</h2>
+
+  <!-- SECTION 1 -->
+  <section class="story-section">
+    <p>
+        PRÓLOGO – EL DESPERTAR
+
+        La historia no comienza en un lugar… sino en una ausencia.
+        El aire vibra como si respirara. El suelo late, líquido y oscuro. Las sombras se mueven antes de ser miradas.
+        Un sonido perfora el silencio: *tic… tac… tic… tac.*
+        
+        Una chica abre los ojos sobre un suelo que parece espejo.
+        Sus pupilas reflejan un cielo sin color. No recuerda su nombre, ni su cuerpo, ni su voz.
+        Solo siente un vacío punzante en el pecho… y un reloj que gotea segundos, como si el tiempo se desangrara.
+        
+        Frente a ella, un espejo agrietado respira. Su reflejo sonríe primero.
+        *Reflejo:* “Tarde o temprano, todo recuerdo te devora.”
+        
+        Elaine retrocede, confusa, y tropieza con algo cálido y brillante.
+        Una pequeña criatura flota frente a ella: un *Pollo Nube*, hecho de plumas y luz difusa, con una sonrisa imposible de odiar.
+        
+        *Pollo Nube:* “¡Aaaay, por fin despertaste! Pensé que ibas a roncar hasta el fin del mundo.”
+        *Elaine (confundida):* “¿Qué eres…?”
+        *Pollo Nube:* “Un genio, evidentemente. Bueno, un poco menos… más nube, más pollo. ¡Pero eso no importa! Lo importante es que tú eres Elaine!”
+        
+        El nombre resuena dentro de su mente. Elaine.
+        Por fin recuerda algo… o al menos eso cree.
+    </p> 
+        ---
+    <p>
+        ## CAPÍTULO I – *ECOS DEL OLVIDO*
+        
+        Elaine y Pollo Nube avanzan por un corredor donde las paredes murmuran su nombre.
+        Las puertas se abren solas, y cada habitación parece repetir la anterior.
+        Todo huele a polvo y melancolía.
+        
+        *Pollo Nube:* “Este lugar se llama la Casa del Eco. Todo lo que has olvidado vive aquí, gritando para que lo escuches.”
+        *Elaine:* “¿Y si no quiero escuchar?”
+        *Pollo Nube (mirando al suelo):* “Entonces seguirás soñando.”
+        
+        Encuentra un reloj roto, una muñeca sin ojos, y una cinta que reproduce una voz suave.
+        *Evelyn (voz grabada):* “Recuerda solo lo bueno, Elaine. Lo demás… déjalo morir.”
+        
+        La voz es dulce, maternal.
+        Pero el eco se vuelve un susurro insistente, hasta que el entorno comienza a deformarse.
+        El techo se estira, las paredes laten. Los cuadros la observan.
+        
+        *Elaine:* “¿Quién eres?”
+        *Evelyn (risa suave):* “Soy quien te protege de ti misma.”
+        
+        Una sombra femenina surge del reflejo del espejo.
+        Evelyn, vestida con un traje blanco, ojos grises y una sonrisa que nunca cambia.
+        Su presencia es serena, pero el aire se enfría con ella.
+        
+        *Evelyn:* “Recordar duele. ¿Por qué insistir en sufrir?”
+        *Elaine:* “Porque olvidar me mata.”
+        
+        El entorno se desmorona. Pollo Nube toma su mano.
+        *Pollo Nube:* “¡Corre! ¡Los ecos vienen!”
+        
+        Las Sombras del Recuerdo Falso emergen: figuras sin rostro que repiten frases distorsionadas.
+        Elaine corre hasta hallar una puerta marcada con su nombre.
+        Al atravesarla, el mundo cambia.
+    </p> 
+        ---
+    <p>
+        ## CAPÍTULO II – *EL CONTRATO DEL OLVIDO*
+        
+        Ahora está en una ciudad de neón que flota sobre el agua.
+        Pantallas gigantes muestran a un hombre hermoso de mirada triste: *Sireno Zario.*
+        
+        *Sireno (voz en altavoces):*
+        
+        > “Bienvenida, Elaine. Aquí no hay dolor. Solo recuerdos felices. Firma el contrato y todo el pasado desaparecerá.”
+        
+        En cada esquina, hologramas repiten su voz.
+        Elaine siente una mezcla de atracción y desconfianza.
+        *Elaine (susurrando):* “Siento que lo conozco…”
+        *Pollo Nube:* “Sí, pero eso no siempre es bueno, ¿sabes? A veces los recuerdos bonitos también muerden.”
+        
+        De pronto, el suelo se abre.
+        Sireno surge del agua, su torso humano, su cola hecha de reflejos líquidos.
+        Su voz es profunda, melancólica.
+        
+        *Sireno:* “¿Por qué luchar contra lo inevitable? Quédate aquí conmigo. Te haré olvidar el dolor.”
+        *Elaine:* “¿Y si el dolor es lo único real que me queda?”
+        *Sireno:* “Entonces déjame ser tu mentira.”
+        
+        Mientras habla, el cielo se tiñe de rojo.
+        Las Sombras del Recuerdo Falso regresan.
+        Elaine intenta escapar, pero Pollo Nube es arrastrado por una ola negra.
+        
+        *Pollo Nube (gritando):* “¡No firmes nadaaa!”
+        Desaparece.
+        
+        Elaine cae de rodillas. Evelyn aparece detrás, sosteniendo un contrato hecho de luz.
+        *Evelyn:* “Déjalo ir. Él es solo una invención infantil.”
+        *Elaine:* “No. Él es mi esperanza.”
+        Rompe el contrato. El mundo colapsa.
+        Una voz grave, antigua, la llama desde la oscuridad.
+    </p> 
+        ---
+    <p>
+        ## CAPÍTULO III – *GRAEL, EL GUARDIÁN DE LA DUDA*
+        
+        Elaine despierta en un bosque de cristal. Cada árbol refleja un recuerdo diferente.
+        En el centro, un ser cubierto de placas metálicas observa el horizonte: *Grael*.
+        
+        *Grael:* “Llegaste lejos… pero sigues huyendo.”
+        *Elaine:* “No huyo. Busco respuestas.”
+        *Grael:* “Las respuestas no existen, solo decisiones.”
+        
+        Su voz resuena como un eco doble, mitad humana, mitad máquina.
+        Cada palabra que pronuncia hace que el bosque cambie de color.
+        
+        *Grael:* “Para encontrar a tu amigo, debes mirar lo que más temes.
+        Mira dentro de tu propio reflejo.”
+        
+        Elaine se enfrenta a una versión distorsionada de sí misma: fría, sin emoción, con los ojos de Evelyn.
+        Debe elegir: destruir el reflejo o abrazarlo.
+        Elige abrazarlo.
+        El reflejo se disuelve y Grael asiente.
+        
+        *Grael:* “Lo que no duele, no fue real.”
+        El bosque se abre, mostrando una puerta hecha de relojes.
+    </p> 
+        ---
+    <p>
+        ## CAPÍTULO IV – *EL COLAPSO DEL TIEMPO*
+        
+        Elaine atraviesa la puerta y cae en el Núcleo de los Recuerdos: un espacio donde el cielo y el suelo se mezclan, lleno de fragmentos suspendidos.
+        Allí, todo encaja.
+        Evelyn no es una enemiga: es la voz que su mente creó tras la muerte de su pareja, con quien había diseñado el proyecto “Sireno Zario”.
+        Un accidente los separó. Desde entonces, Elaine está en coma.
+        
+        *Elaine (llorando):* “Todo esto… era yo.”
+        *Evelyn (suavemente):* “Y seguirás siendo, si lo deseas.”
+        *Elaine:* “No. Ya no quiero desear, quiero vivir.”
+        
+        Evelyn sonríe, pero sus ojos revelan tristeza.
+        *Evelyn:* “Entonces despierta… pero sin mí.”
+        
+        De pronto, Pollo Nube reaparece, débil y agrietado.
+        *Pollo Nube (bromeando):* “Te tomaste tu tiempo, ¿eh? Me estaba aburriendo de no existir.”
+        Elaine ríe entre lágrimas.
+    </p>  
+        ---
+    <p>
+        ## CAPÍTULO V – *EL SACRIFICIO*
+        
+        Evelyn intenta convencerla de quedarse:
+        *Evelyn:* “Aquí no hay dolor, Elaine. Aquí todavía existimos.”
+        
+        Pero Pollo Nube mira el reloj central que sostiene el mundo.
+        *Pollo Nube:* “Si seguimos aquí, nunca volverás a ser tú.”
+        Sin esperar respuesta, se lanza al reloj.
+        
+        El tiempo se rompe.
+        Los segundos gotean hacia arriba.
+        Elaine grita.
+        *Elaine:* “¡Nooo! ¡Pollo Nube!”
+        Pero su sacrificio abre una grieta de luz.
+        
+        *Grael (en la distancia):* “El dolor es el precio de la libertad.”
+        Elaine atraviesa la puerta, llorando, con el corazón latiendo entre ecos.
+        
+    </p>    ---
+    <p>
+        ## EPÍLOGO – *EL DESPERTAR*
+        
+        Elaine abre los ojos en una habitación blanca.
+        Una enfermera sonríe.
+        *Enfermera:* “Bienvenida de vuelta, señorita Parker. Estuvo en coma seis meses.”
+        
+        Elaine mira su pecho. Late.
+        Sobre la mesa, un dibujo infantil: ella y Pollo Nube tomados de la mano bajo un cielo azul.
+        Sonríe, entre lágrimas.
+        
+        Pero algo no encaja.
+        En la pared hay un espejo redondo… y sobre él, un reloj.
+        Las agujas están detenidas en *00:00*.
+        
+        El reflejo sonríe antes que ella.
+        Y la voz de Evelyn susurra, muy cerca:
+        *Evelyn:* “Despierta otra vez, Elaine. Aún queda un recuerdo.”
+        
+        Elaine mira sus manos: están cubiertas de sangre.
+        El monitor cardíaco suena en un pitido continuo.
+        La habitación se disuelve.
+        
+        *Grael (voz final):* “Nadie despierta del todo.”
+        
+        Pantalla en negro.
+        *Tic… tac… tic… tac…*
+        
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Dead Memories © 2025 — Historia
+</footer>
+
+</body>
+</html>

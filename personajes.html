@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Dead Memories – Personajes</title>
+        
+          <style>
+            :root{
+              --bg1: #020204;
+              --bg2: #0b0b0f;
+              --accent: #ff6f61;
+              --muted: #bfc6d1;
+              --card: rgba(255,255,255,0.03);
+              font-family: "Segoe UI", Arial, sans-serif;
+              --radius: 14px;
+            }
+            *{box-sizing:border-box;}
+            body{
+              margin:0;
+              background: linear-gradient(180deg,var(--bg1),var(--bg2));
+              color:var(--muted);
+            }
+        
+            header{
+              display:flex;
+              justify-content:space-between;
+              align-items:center;
+              padding:20px 40px;
+              border-bottom:1px solid rgba(255,255,255,0.04);
+              position:sticky;
+              top:0;
+              backdrop-filter: blur(6px);
+              z-index:50;
+            }
+            .brand{
+              display:flex;
+              align-items:center;
+              gap:14px;
+              text-decoration:none;
+              color:#fff;
+            }
+            .brand img{
+              width:56px;
+              height:56px;
+              border-radius:10px;
+              object-fit:cover;
+            }
+            nav a{
+              color:var(--muted);
+              text-decoration:none;
+              margin-left:18px;
+              font-weight:600;
+            }
+            nav a:hover{
+              color:#fff;
+            }
+        
+            .container{
+              max-width:1100px;
+              margin:40px auto;
+              padding:0 22px;
+            }
+        
+            h1{
+              color:#fff;
+              text-align:center;
+              font-size:40px;
+              margin-bottom:30px;
+            }
+        
+            .grid{
+              display:grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+              gap:24px;
+            }
+        
+            .card{
+              background:var(--card);
+              padding:16px;
+              border-radius:var(--radius);
+              text-align:center;
+              border:1px solid rgba(255,255,255,0.03);
+              transition: transform .2s, box-shadow .2s;
+            }
+            .card:hover{
+              transform: translateY(-6px);
+              box-shadow:0 10px 40px rgba(0,0,0,0.6);
+            }
+        
+            .card img{
+              width:100%;
+              height:270px;
+              object-fit:cover;
+              border-radius:12px;
+              margin-bottom:12px;
+            }
+        
+            .card h3{
+              margin:0;
+              font-size:22px;
+              color:#fff;
+            }
+        
+            .card p{
+              font-size:14px;
+              line-height:1.6;
+              margin-top:6px;
+              color:var(--muted);
+            }
+        
+            footer{
+              text-align:center;
+              margin:50px 0 20px;
+              font-size:13px;
+              color:rgba(255,255,255,0.4);
+            }
+            .btn{
+              display:inline-block;
+              padding:12px 18px;
+              border-radius:10px;
+              background:rgba(255,255,255,0.08);
+              border:1px solid rgba(255,255,255,0.03);
+              color:#fff;
+              text-decoration:none;
+              font-weight:600;
+              margin-right:10px;
+              margin-top:20px;
+            }
+            .btn:hover{
+              background:rgba(255,255,255,0.16);
+            } 
+          </style>
+        </head>
+        
+        <body>
+        
+        <header>
+          <a href="Deadmemories.html" class="brand">
+            <img src="logo.jpeg" alt="logo" onerror="this.style.display='none'">
+            <div>
+              <strong>Dead Memories</strong>
+              <div style="font-size:12px;color:var(--muted)">Personajes</div>
+            </div>
+          </a>
+        
+          <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="videojuego.html">Videojuego</a>
+            <a href="historia.html">Historia</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="expansiones.html">Expansiones</a>
+          </nav>
+        </header>
+        
+        <main class="container">
+        
+          <h1>Personajes de Dead Memories</h1>
+        
+          <section class="grid">
+        
+            <!-- Elaine -->
+            <article class="card">
+              <img src="elaine.png" alt="Elaine Parker">
+              <h3>Elaine Parker</h3>
+              <p>
+                La protagonista de la historia. Perdida entre recuerdos fragmentados,
+                lucha por encontrar respuestas a lo que realmente ocurrió en su pasado.
+                Su mirada vacía refleja el peso de los secretos que carga.
+              </p>
+              <a href="elaine.html" class="btn">Explora</a>
+            </article>
+        
+            <!-- Evelyn -->
+            <article class="card">
+              <img src="evelyn.png" alt="Evelyn">
+              <h3>Evelyn</h3>
+              <p>
+                Una presencia elegante y enigmática. Evelyn parece conocer más sobre
+                la mente de Elaine que la propia protagonista. ¿Aliada o amenaza?
+              </p>
+              <a href="evelyn.html" class="btn">Explora</a>
+            </article>
+        
+            <!-- Grael -->
+            <article class="card">
+              <img src="grael.png" alt="Grael">
+              <h3>Grael</h3>
+              <p>
+                Un caballero protector con un pasado cargado de batallas. Su armadura
+                oculta cicatrices que no solo son físicas. Camina entre la realidad y
+                los recuerdos distorsionados.
+              </p>
+              <a href="Grael.html" class="btn">Explora</a>
+            </article>
+        
+            <!-- Pollo Nube -->
+            <article class="card">
+              <img src="pollonube.jpeg" alt="Pollo Nube">
+              <h3>Pollo Nube</h3>
+              <p>
+                Una criatura adorable que acompaña a Elaine en los momentos más
+                confusos. ¿Un amigo imaginario? ¿Una manifestación emocional?
+                Nadie lo sabe. Pero flota. Y eso es genial.
+              </p>
+              <a href="pollonube.html" class="btn">Explora</a>
+            </article>
+
+            <!-- Sireno Zairo -->
+            <article class="card">
+                <img src="sireno.png" alt="Sireno Zairo">
+                <h3>Sireno Zairo</h3>
+                <p>
+                  Una criatura adorable que acompaña a Elaine en los momentos más
+                  confusos. ¿Un amigo imaginario? ¿Una manifestación emocional?
+                  Nadie lo sabe. Pero flota. Y eso es genial.
+                </p>
+                <a href="sireno.html" class="btn">Explora</a>
+              </article>
+        
+          </section>
+        
+        </main>
+        
+        <footer>
+        Dead Memories © 2025
+        </footer>
+        
+        </body>
+        </html>
+                

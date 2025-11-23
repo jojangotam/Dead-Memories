@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de Grael – Dead Memories</title>
+
+  <style>
+    :root{
+      --bg1:#020204;
+      --bg2:#0b0b0f;
+      --accent:#ff6f61;
+      --muted:#bfc6d1;
+      --card:rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      border-bottom:1px solid rgba(255,255,255,0.04);
+      backdrop-filter:blur(6px);
+      position:sticky;
+      top:0;
+      z-index:50;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:#fff;
+    }
+    .brand img{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+    nav a:hover{ color:#fff;}
+
+    /* CONTENT */
+    .container{
+      max-width:900px;
+      margin:60px auto;
+      padding:0 22px;
+    }
+
+    .story-box{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.03);
+      padding:32px;
+      border-radius:var(--radius);
+      box-shadow:0 12px 40px rgba(0,0,0,0.5);
+    }
+
+    h1{
+      text-align:center;
+      color:#fff;
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    h2{
+      text-align:center;
+      color:var(--accent);
+      font-size:18px;
+      margin-bottom:30px;
+      letter-spacing:1px;
+    }
+
+    p{
+      margin-bottom:18px;
+      font-size:17px;
+    }
+
+    .quote{
+      padding:18px;
+      background:rgba(255,255,255,0.06);
+      border-left:5px solid var(--accent);
+      border-radius:10px;
+      margin:25px 0;
+      color:#fff;
+      font-style:italic;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.03);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      margin-right:10px;
+      margin-top:25px;
+    }
+    .btn:hover{
+      background:rgba(255,255,255,0.16);
+    }
+
+    footer{
+      text-align:center;
+      color:rgba(255,255,255,0.4);
+      margin-top:40px;
+      margin-bottom:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="Deadmemories.html" class="brand">
+    <img src="logo.jpeg" onerror="this.style.display='none'">
+    <div>
+      <strong>Dead Memories</strong>
+      <div style="font-size:12px;color:var(--muted)">Historia de Grael</div>
+    </div>
+  </a>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="videojuego.html">Videojuego</a>
+    <a href="historia.html">Historia</a>
+    <a href="personajes.html">Personajes</a>
+    <a href="expansiones.html">Expansiones</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="story-box">
+
+    <h1>Historia de Grael</h1>
+    <h2>Narrada por él mismo</h2>
+
+    <p>
+      Mi nombre es <strong>Grael</strong>.  
+      No nací para ser un héroe, y mucho menos para ser recordado.  
+      Fui forjado para algo distinto: para vigilar aquello que nadie comprende
+      y cargar con un juramento que me fue impuesto antes incluso de entenderlo.
+    </p>
+
+    <p>
+      Durante años protegí un punto de transición, un puente entre lo conocido y lo
+      prohibido. Ese lugar… ese límite… era todo lo que tenía.  
+      No conocía descanso, ni propósito más allá de cumplir la orden de
+      mantener alejados a quienes no estaban listos para enfrentar la verdad.
+    </p>
+
+    <div class="quote">
+      "No estoy aquí para salvarte. Estoy aquí para ver si eres digna de seguir adelante."
+    </div>
+
+    <p>
+      Entonces apareció ella: <strong>Elaine</strong>.  
+      Una joven sin memoria, pero con una determinación tan feroz que incluso yo,
+      un guardián entrenado para no sentir, dudé de mi deber.
+    </p>
+
+    <p>
+      A medida que avanzaba junto a mí, descubrí secretos sobre mi propio origen,
+      fragmentos de un linaje que creí extinto.  
+      Y comprendí que mi papel no era detenerla…  
+      sino decidir si el pasado que busca merece ser recuperado.
+    </p>
+
+    <p>
+      Ahora, su destino y el mío están entrelazados.  
+      No por elección, sino porque las verdades que ambos buscamos
+      son parte del mismo abismo.
+    </p>
+
+    <a href="inicio.html" class="btn">Inicio</a>
+    <a href="grael.html" class="btn">Volver</a>
+
+  </section>
+
+</main>
+
+<footer>
+  Dead Memories © 2025 — Historia de Grael
+</footer>
+
+</body>
+</html>

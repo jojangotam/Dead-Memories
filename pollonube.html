@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pollo Nube – Dead Memories</title>
+
+  <style>
+    :root{
+      --bg1:#020204;
+      --bg2:#0b0b0f;
+      --accent:#ffdc5c; /* Color especial para Pollo Nube */
+      --muted:#bfc6d1;
+      --card:rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      border-bottom:1px solid rgba(255,255,255,0.04);
+      backdrop-filter:blur(6px);
+      position:sticky;
+      top:0;
+      z-index:50;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:#fff;
+    }
+    .brand img{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+    nav a:hover{ color:#fff;}
+
+    /* CONTENT */
+    .container{
+      max-width:900px;
+      margin:50px auto;
+      padding:0 22px;
+    }
+    h1{
+      text-align:center;
+      font-size:42px;
+      color:#fff;
+      margin-bottom:10px;
+    }
+    h2{
+      text-align:center;
+      color:var(--accent);
+      font-size:20px;
+      margin-bottom:30px;
+      letter-spacing:1px;
+    }
+
+    .profile-box{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.03);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:0 12px 40px rgba(0,0,0,0.5);
+      margin-bottom:40px;
+    }
+
+    .profile-img{
+      width:100%;
+      max-height:440px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:20px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:22px 0;
+      font-size:15px;
+    }
+    table td{
+      padding:10px;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+    table tr:first-child td{
+      font-weight:700;
+      color:#fff;
+      font-size:16px;
+      border-bottom:2px solid rgba(255,255,255,0.15);
+    }
+
+    .quote{
+      margin:20px 0;
+      padding:18px;
+      background:rgba(255,255,255,0.06);
+      border-left:5px solid var(--accent);
+      border-radius:10px;
+      font-style:italic;
+      color:#fff;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.03);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      margin-right:10px;
+      margin-top:20px;
+    }
+    .btn:hover{
+      background:rgba(255,255,255,0.16);
+    }
+
+    footer{
+      text-align:center;
+      margin:60px 0 20px;
+      color:rgba(255,255,255,0.4);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="Deadmemories.html" class="brand">
+    <img src="logo.jpeg" onerror="this.style.display='none'">
+    <div>
+      <strong>Dead Memories</strong>
+      <div style="font-size:12px;color:var(--muted)">Pollo Nube</div>
+    </div>
+  </a>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="videojuego.html">Videojuego</a>
+    <a href="historia.html">Historia</a>
+    <a href="personajes.html">Personajes</a>
+    <a href="expansiones.html">Expansiones</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1>Pollo Nube</h1>
+  <h2>La criatura flotante que ilumina la oscuridad</h2>
+
+  <section class="profile-box">
+    
+    <img src="pollonube.jpeg" alt="Pollo Nube" class="profile-img">
+
+    <p>
+      Pollo Nube es una criatura mágica cuyo origen es tan desconocido como adorable.  
+      Sigue a Elaine como un compañero fiel, aportando humor, ternura y pequeños destellos de sabiduría inesperada.
+      Aunque nadie entiende exactamente su naturaleza, él parece comprender a Elaine mejor que nadie.
+    </p>
+
+    <div class="quote">
+      "Pio… (Traducción: Confía en ti. Yo lo hago)."
+    </div>
+
+    <h3 style="color:#fff;margin-top:30px;">Ficha del personaje</h3>
+
+    <table>
+      <tr>
+        <td>Fisiología</td>
+        <td>Sociología</td>
+        <td>Psicología</td>
+      </tr>
+
+      <tr>
+        <td>Sexo: Masculino (simbólico)</td>
+        <td>Clase: Criatura mágica sin jerarquía</td>
+        <td>Vida Sexual: Desconocida, posiblemente inexistente</td>
+      </tr>
+
+      <tr>
+        <td>Edad: Indefinida, apariencia juvenil</td>
+        <td>Ocupación: Compañero y guía cómico</td>
+        <td>Normas Morales: Sencillas y honestas</td>
+      </tr>
+
+      <tr>
+        <td>Tamaño: Pequeño, forma esponjosa</td>
+        <td>Educación: Magia instintiva</td>
+        <td>Premisa: Ayudar a Elaine a recuperar su memoria</td>
+      </tr>
+
+      <tr>
+        <td>Rasgos físicos: Plumas amarillas, nubes blancas</td>
+        <td>Vida de hogar: Vive en su propia nube</td>
+        <td>Contratiempos: Torpe y despistado</td>
+      </tr>
+    </table>
+
+    <p>
+      Aunque parezca un simple acompañante tierno, Pollo Nube podría ser la clave para entender 
+      partes esenciales del pasado de Elaine. Su inocencia contrasta con la oscuridad del mundo que habitan.
+    </p>
+
+    <a href="inicio.html" class="btn">Inicio</a>
+    <a href="personajes.html" class="btn">Volver</a>
+
+  </section>
+
+</main>
+
+<footer>
+  Dead Memories © 2025 — Pollo Nube
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elaine Parker – Dead Memories</title>
+
+  <style>
+    :root{
+      --bg1:#020204;
+      --bg2:#0b0b0f;
+      --accent:#ff6f61;
+      --muted:#bfc6d1;
+      --card:rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      border-bottom:1px solid rgba(255,255,255,0.04);
+      backdrop-filter:blur(6px);
+      position:sticky;
+      top:0;
+      z-index:50;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:#fff;
+    }
+    .brand img{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+    nav a:hover{ color:#fff;}
+
+    /* CONTENT */
+    .container{
+      max-width:900px;
+      margin:50px auto;
+      padding:0 22px;
+    }
+    h1{
+      text-align:center;
+      font-size:42px;
+      color:#fff;
+      margin-bottom:10px;
+    }
+    h2{
+      text-align:center;
+      color:var(--accent);
+      font-size:20px;
+      margin-bottom:30px;
+      letter-spacing:1px;
+    }
+
+    .profile-box{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.03);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:0 12px 40px rgba(0,0,0,0.5);
+      margin-bottom:40px;
+    }
+
+    .profile-img{
+      width:100%;
+      max-height:440px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:20px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:22px 0;
+      font-size:15px;
+    }
+    table td{
+      padding:10px;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+    table tr:first-child td{
+      font-weight:700;
+      color:#fff;
+      font-size:16px;
+      border-bottom:2px solid rgba(255,255,255,0.15);
+    }
+
+    .quote{
+      margin:20px 0;
+      padding:18px;
+      background:rgba(255,255,255,0.06);
+      border-left:5px solid var(--accent);
+      border-radius:10px;
+      font-style:italic;
+      color:#fff;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.03);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      margin-right:10px;
+      margin-top:20px;
+    }
+    .btn:hover{
+      background:rgba(255,255,255,0.16);
+    }
+
+    footer{
+      text-align:center;
+      margin:60px 0 20px;
+      color:rgba(255,255,255,0.4);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="inicio.html" class="brand">
+    <img src="logo.jpeg" onerror="this.style.display='none'">
+    <div>
+      <strong>Dead Memories</strong>
+      <div style="font-size:12px;color:var(--muted)">Elaine Parker</div>
+    </div>
+  </a>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="videojuego.html">Videojuego</a>
+    <a href="historia.html">Historia</a>
+    <a href="personajes.html">Personajes</a>
+    <a href="expansiones.html">Expansiones</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1>Elaine Parker</h1>
+  <h2>La protagonista que intenta recordar quién es</h2>
+
+  <section class="profile-box">
+    
+    <img src="elaine.png" alt="Elaine Parker" class="profile-img">
+
+    <p>
+      Elaine Parker despierta sin recuerdos claros de su pasado.  
+      Su mente es un laberinto de imágenes borrosas, ecos rotos y emociones que no sabe explicar.  
+      Mientras avanza, comienza a sentir que su propia mente la protege… o la engaña.
+    </p>
+
+    <div class="quote">
+      "No sé quién era antes… pero sé que no puedo seguir huyendo de mí misma."
+    </div>
+
+    <h3 style="color:#fff;margin-top:30px;">Ficha del personaje</h3>
+
+    <table>
+      <tr>
+        <td>Fisiología</td>
+        <td>Sociología</td>
+        <td>Psicología</td>
+      </tr>
+
+      <tr>
+        <td>Sexo: Femenino</td>
+        <td>Clase: Indefinida</td>
+        <td>Vida Sexual: Secundaria, no es su motivación</td>
+      </tr>
+
+      <tr>
+        <td>Edad: 25 años</td>
+        <td>Ocupación: Buscando su identidad</td>
+        <td>Normas Morales: Guiada por su intuición, algo ingenua</td>
+      </tr>
+
+      <tr>
+        <td>Altura y Peso: Estatura media, complexión delgada</td>
+        <td>Educación: Fragmentada</td>
+        <td>Premisa: Recuperar su memoria</td>
+      </tr>
+
+      <tr>
+        <td>Piel, ojos, cabello: Clara, ojos café, cabello castaño oscuro</td>
+        <td>Vida de hogar: Perdida por su amnesia</td>
+        <td>Contratiempos: Vive la frustración del olvido</td>
+      </tr>
+    </table>
+
+    <p>
+      Elaine es el corazón emocional del juego.  
+      Cada recuerdo recuperado puede ser una pista… o una mentira más.
+    </p>
+
+    <a href="inicio.html" class="btn">Inicio</a>
+    <a href="personajes.html" class="btn">Volver</a>
+
+  </section>
+
+</main>
+
+<footer>
+  Dead Memories © 2025 — Elaine Parker · Ficha Cinemática
+</footer>
+
+</body>
+</html>

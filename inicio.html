@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dead Memories - Portal</title>
+  <style>
+    /* Estilo base inspirado en páginas de estudio de videojuegos (Rockstar-like feel) */
+    :root{
+      --bg1: #020204;
+      --bg2: #0b0b0f;
+      --accent: #ff6f61;
+      --muted: #bfc6d1;
+      --glass: rgba(255,255,255,0.04);
+      --card: rgba(255,255,255,0.03);
+      --radius: 14px;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; background: linear-gradient(180deg,var(--bg1),var(--bg2)); color:var(--muted); -webkit-font-smoothing:antialiased;}
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:20px 40px; gap:20px;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      position:sticky; top:0; backdrop-filter: blur(6px); z-index:40;
+    }
+    .brand { display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit; }
+    .brand img{ width:56px; height:56px; object-fit:cover; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,0.6); }
+    .brand h1{ font-size:18px; margin:0; letter-spacing:1px; color:#fff; }
+    nav a{ color:var(--muted); text-decoration:none; margin-left:18px; font-weight:600; }
+    nav a.cta{ background:var(--accent); color:#fff; padding:8px 14px; border-radius:10px; box-shadow:0 6px 18px rgba(255,111,97,0.12); }
+    .container{ max-width:1100px; margin:40px auto; padding:0 22px; }
+    .hero{
+      display:grid; grid-template-columns: 1fr 420px; gap:28px; align-items:stretch;
+    }
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      border-radius: var(--radius); padding:30px; box-shadow: 0 10px 40px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.03);
+    }
+    .hero-card h2{ color:#fff; margin:0 0 10px; font-size:28px; }
+    .hero-card p{ color:var(--muted); line-height:1.6; margin:0 0 18px; }
+    .actions{ display:flex; gap:12px; flex-wrap:wrap; }
+    .btn{
+      display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700;
+      color:#fff; background:rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.03);
+    }
+    .btn.primary{ background: linear-gradient(90deg,var(--accent), #d34f42); box-shadow:0 10px 30px rgba(211,79,66,0.12); }
+    /* right column card */
+    .media{
+      display:flex; flex-direction:column; gap:14px;
+    }
+    .media video, .media img{ width:100%; border-radius:12px; object-fit:cover; display:block; box-shadow:0 10px 40px rgba(0,0,0,0.5); }
+    /* Grid de secciones */
+    .grid{ margin-top:30px; display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+    .card{
+      background:var(--card); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.02);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .card:hover{ transform: translateY(-6px); box-shadow:0 18px 50px rgba(0,0,0,0.6); }
+    .card img{ width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:12px; }
+    .card h3{ margin:0 0 8px; color:#fff; }
+    .card p{ margin:0; color:var(--muted); font-size:14px; line-height:1.5; }
+    footer{ margin:48px 0; text-align:center; color:rgba(255,255,255,0.4); font-size:13px; }
+    /* responsive */
+    @media(max-width:880px){
+      .hero{ grid-template-columns:1fr; }
+      nav a{ margin-left:10px; font-size:14px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="Deadmemories.html" class="brand" title="Inicio - Dead Memories">
+      <!-- Si tienes logo.jpeg, lo usará. Si no, muestra cuadro con texto -->
+      <img src="logo.jpeg" alt="Dead Memories logo" onerror="this.style.display='none'">
+      <div>
+        <h1>Dead Memories</h1>
+        <div style="font-size:12px;color:var(--muted);">Un juego de misterio</div>
+      </div>
+    </a>
+
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="videojuego.html">Videojuego</a>
+      <a href="historia.html">Historia</a>
+      <a href="personajes.html">Personajes</a>
+      <a href="expansiones.html">Expansiones</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Explora los recuerdos. Descubre la verdad.</h2>
+        <p>Dead Memories te sumerge en la mente de Elaine Parker: un mundo donde los recuerdos traicionan, los aliados se ocultan en sombras y un pollo nube te acompaña. Navega por la historia, conoce personajes y mira el tráiler oficial.</p>
+
+        <div class="actions">
+          <a class="btn primary" href="videojuego.html">Ver Tráiler</a>
+          <a class="btn" href="historia.html">Leer la Historia</a>
+          <a class="btn" href="personajes.html">Conocer Personajes</a>
+          <a class="btn" href="expansiones.html">Expansiones</a>
+        </div>
+
+        <hr style="margin:18px 0 12px; border:none; height:1px; background:rgba(255,255,255,0.03)">
+
+        <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+          <div style="display:flex; gap:10px; align-items:center;">
+            <img src="elaine.png" alt="Elaine" style="width:64px;height:90px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+            <div>
+              <div style="color:#fff;font-weight:700">Elaine Parker</div>
+              <div style="font-size:13px;color:var(--muted)">Protagonista perdida en su propia mente</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:10px; align-items:center;">
+            <img src="pollonube.jpeg" alt="Pollo Nube" style="width:64px;height:90px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+            <div>
+              <div style="color:#fff;font-weight:700">Pollo Nube</div>
+              <div style="font-size:13px;color:var(--muted)">Su amigo imaginario</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="media">
+        <!-- reproductor de video (si existe trailer.mp4 en la misma carpeta se reproducirá) -->
+        <video controls preload="metadata" poster="coomingsoon.jpeg">
+          <source src="trailer.mp4" type="video/mp4">
+          Tu navegador no soporta el video. Abre la página de videojuego para ver el tráiler.
+        </video>
+
+        <!-- Galería pequeña -->
+        <div style="display:flex; gap:10px;">
+          <img src="evelyn.png" alt="Evelyn" style="height:110px; width:calc(50% - 5px)">
+          <img src="grael.png" alt="Grael" style="height:110px; width:calc(50% - 5px)">
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid" aria-label="Secciones">
+      <article class="card">
+        <img src="coomingsoon.jpeg" alt="Coming soon">
+        <h3>Videojuego</h3>
+        <p>Trailer, fechas y contenido. Haz click para ver la página del videojuego (incluye el reproductor si subiste trailer.mp4).</p>
+        <p style="margin-top:10px;"><a class="btn" href="videojuego.html">Ir a Videojuego</a></p>
+      </article>
+
+      <article class="card">
+        <img src="elaine.png" alt="Elaine personaje">
+        <h3>Historia</h3>
+        <p>Lee la escena que presentamos sobre Elaine, su voz interior (Evelyn) y el misterio que rodea sus recuerdos.</p>
+        <p style="margin-top:10px;"><a class="btn" href="historia.html">Leer Historia</a></p>
+      </article>
+
+      <article class="card">
+        <img src="pollonube.jpeg" alt="Pollo Nube">
+        <h3>Personajes</h3>
+        <p>Explora la galería de personajes: Elaine, Evelyn, Grael, Sireno Zairo y el entrañable Pollo Nube.</p>
+        <p style="margin-top:10px;"><a class="btn" href="personajes.html">Ver Personajes</a></p>
+      </article>
+
+      <article class="card">
+        <img src="coomingsoon.jpeg" alt="Expansiones">
+        <h3>Expansiones y redes</h3>
+        <p>Enlaces a expansiones, podcast e Instagram del juego.</p>
+        <p style="margin-top:10px;"><a class="btn" href="expansiones.html">Más información</a></p>
+      </article>
+    </section>
+
+    <footer>
+      © Dead Memories
+    </footer>
+  </main>
+
+  <!-- Pequeño script para interacciones mínimas -->
+  <script>
+    // fallback si el logo no existe: crea texto
+    (function(){
+      const brandImg = document.querySelector('.brand img');
+      if(!brandImg) return;
+      brandImg.addEventListener('error',()=>{
+        brandImg.style.display='none';
+      });
+    })();
+  </script>
+</body>
+</html>
