@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de Grael – Dead Memories</title>
+
+  <style>
+    :root{
+      --bg1:#020204;
+      --bg2:#0b0b0f;
+      --accent:#ff6f61;
+      --muted:#bfc6d1;
+      --card:rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      border-bottom:1px solid rgba(255,255,255,0.04);
+      backdrop-filter:blur(6px);
+      position:sticky;
+      top:0;
+      z-index:50;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:#fff;
+    }
+    .brand img{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+    nav a:hover{ color:#fff;}
+
+    /* CONTENT */
+    .container{
+      max-width:900px;
+      margin:60px auto;
+      padding:0 22px;
+    }
+
+    .story-box{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.03);
+      padding:32px;
+      border-radius:var(--radius);
+      box-shadow:0 12px 40px rgba(0,0,0,0.5);
+    }
+
+    h1{
+      text-align:center;
+      color:#fff;
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    h2{
+      text-align:center;
+      color:var(--accent);
+      font-size:18px;
+      margin-bottom:30px;
+      letter-spacing:1px;
+    }
+
+    p{
+      margin-bottom:18px;
+      font-size:17px;
+    }
+
+    .quote{
+      padding:18px;
+      background:rgba(255,255,255,0.06);
+      border-left:5px solid var(--accent);
+      border-radius:10px;
+      margin:25px 0;
+      color:#fff;
+      font-style:italic;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.03);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      margin-right:10px;
+      margin-top:25px;
+    }
+    .btn:hover{
+      background:rgba(255,255,255,0.16);
+    }
+
+    footer{
+      text-align:center;
+      color:rgba(255,255,255,0.4);
+      margin-top:40px;
+      margin-bottom:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <img src="logo.jpeg" onerror="this.style.display='none'">
+    <div>
+      <strong>Dead Memories</strong>
+      <div style="font-size:12px;color:var(--muted)">Historia de Grael</div>
+    </div>
+  </a>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="videojuego.html">Videojuego</a>
+    <a href="historia.html">Historia</a>
+    <a href="personajes.html">Personajes</a>
+    <a href="expansiones.html">Expansiones</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="story-box">
+
+    <h1>Historia Oculta</h1>
+    
+
+    <p>
+      Veo que eres curioso, pero recuerda no todo lo que vez es real
+    </p>
+     <div class="trailer-box">
+            <video controls poster="coomingsoon.png">
+              <source src="animacion final.mp4" type="video/mp4">
+              Tu navegador no soporta el video. Descarga el tráiler desde la página.
+            </video>
+          </div>
+    
+
+    <a href="index.html" class="btn">Inicio</a>
+    <a href="grael.html" class="btn">Volver</a>
+
+  </section>
+
+</main>
+
+<footer>
+  Dead Memories © 2025 — Historia de Grael
+</footer>
+
+</body>
+</html>
